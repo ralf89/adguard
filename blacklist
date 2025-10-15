@@ -1,0 +1,34 @@
+# Regexp Blacklist
+/([\.\-\_])?(logging|annons|crashlytics(reports)?|metrics|banner(s)?|marketing|analytics(new)?|telemetry|(stats|statistics)|events|track(ing)?|(insights\-)?collector|(d)?trace)([\.\-\_])?/
+/^ad([sxve]?[0-9]*|system)([\.\-\_])([^.[:space:]]+\.){1,}|([\.\-\_])ad([sxv]?[0-9]*|system|banners)([\.\-\_])/
+/^(.+([\.\-\_]))?adse?rv(er?|ice)?s?[0-9]*([\.\-\_])/
+/^beacons?[0-9]*([\.\-\_])/
+/^mads\./
+/^count(er(s)?)?([\.\-\_])/
+/^footprints([\.\-\_])/
+/^pixel(s)?([\.\-\_])/
+/^collect(or(s)?)?([\.\-\_])/
+
+# Specific Site Blocking (all subdomains and site)
+/(.*\.)?(imrworldwide\.com$|sentry\.io$|brandmetrics\.com|$brandmetrics\.com$|tsyndicate\.com$|adnxs\.com|moatads\.com$|app-measurement\.com$|admob\.com$|statsy\.net$|footprintdns\.com$|app-measurement\.com$|acuityads\.com$|doubleclick\.net$|ezcybersearch\.com$|affiliator\.(com|nu)$|affiliaxe\.com$|datadoghq\.(com$|eu$)|findbetterresults\.com|funnelytics\.io|tradedoubler\.com)/
+/^app\.adjust\.(world|com|net\.in$)/
+/^(developer)\.asustor\.com$/
+/^galaxy-client-reports\.gog\.com$/
+/^svt\.d[0-9]\.sc\.omtrdc\.net$/
+
+# Malware sites
+/^(.*)?(duc3k|amazingtodaynotsaidhimherwhathe|ankabuttech|tadogem|deveparty|plus-lema|es-megado|focustopbreed78d|fermonesgobide|sertvs|jqscr|jqueryns|maximumpushtodaynotnowbut|motiontodaynotgogoodnowok|mavelecgr|eerier-safety.000webhostapp|catknock|specialblueitems|violetlovelines|panel.cheater-zone|allfamax|client.cheater-zone|bitcoinpricealertexpert|coindexalerter|uniswapdataprice|immagirls.myvnc|alpatrik|justinstalledpanel|damnater)\.com/
+# Decoy Dog Malware
+/^(cbox4\.ignorelist|atlas-upd)\.com$|^(claudfront|allowlisted)\.net|^hsdps\.cc$|^ads-tm-glb\.click$/
+# Infected Debian/Ubuntu Repo
+/^deb\.fdmpkg\.org$/
+/^heavenfiles\.lol$/
+
+# Scam sites
+/^(track-my-delivery\.net|unsubscribeprime\.info)$/
+
+# Unnessary Tracking
+/^(?:(?:sdkconfig\.ad\.india|thm\.market\.intl|weatherapi\.market)\.xiaomi\.com|(?:cn\.app\.chat|g\.galleryapi\.micloud)\.xiaomi\.net)/
+/^(o\.akisinn\.info|co\.dewrain\.life|co\.vaicore\.site|co\.vaicore\.xyz|int\.akisinn\.info|int\.akisinn\.me|int\.akisinn\.site|int\.dewrain\.life|int\.dewrain\.site|int\.dewrain\.world|int\.vaicore\.site|int\.vaicore\.store|int\.vaicore\.xyz|int\.vlancaa\.site|int\.vlancaa\.fun|tok\.vaicore\.xyz)$/
+/^anonymousinfo-eu-[0-9]+\.cos\.[a-z-]+\.myqcloud\.com$/
+/^service[0-9]\.us\.incognia\.com$/
