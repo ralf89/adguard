@@ -1983,3 +1983,23 @@
 ## Adguard Antiblocklist
 
 /^ad-block\.dns\.adguard\.com$/
+
+# === BACKUP OF ADGUARD HOME CUSTOM FILTERING RULES ===
+# These rules are also set in AdGuard Home > Filters > Custom filtering rules.
+# Kept here as a backup; duplicates are harmless.
+# Microsoft
+@@||teams.events.data.microsoft.com^$important
+@@||prod.rewardsplatform.microsoft.com^$important
+@@||eu-mobile.events.data.microsoft.com^$important
+# Netflix
+@@||logs.netflix.com^$important
+@@||ichnaea.netflix.com^$important
+# Websites
+@@||m.vpc.ca^$important
+@@||secure.2checkout.com^$important
+@@||llm-stats.com^$important
+@@||railway.com^$important
+@@||polymarket.com^$important
+# TIM (Telecom Italia) Wi-Fi calling / VoLTE
+@@||ims.telecomitalia.it^
+@@||epc.mnc001.mcc222.3gppnetwork.org^
